@@ -127,3 +127,17 @@ for (let i=0; i < data.length; i++){
 
     window.onload = changeTestimony;
  
+
+window.onscroll = function(){
+const headerHeight = document.querySelector('.header').offsetHeight
+const scrollHeight = window.scrollY;
+const heroHeight = document.querySelector('.hero').offsetHeight;
+
+scrollHeight >= heroHeight - headerHeight 
+    ? 
+  document.querySelector('.header').classList.add('toggleHeader') 
+    : 
+  document.querySelector('.header').classList.remove('toggleHeader');
+
+}
+
