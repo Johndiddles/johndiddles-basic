@@ -4,10 +4,33 @@
     box-sizing: border-box;
 }
 
+@keyframes testimony {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+:root {
+    --light: #F0F1ED;
+    --light-brown: #b79582;
+    --gray: #938b82;
+    --brown: #805d4e;
+    --dark-gray: #2c2e39;
+    --gray-text: #8b8b8b;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     overflow: overlay;
     overflow-x: hidden;
+    /* background: var(--light); */
+}
+
+a {
+    text-decoration: none;
 }
 
 ::-webkit-scrollbar {
@@ -20,7 +43,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #FB4F93;
+    background: var(--brown);
     border-radius: 10px;
 }
 
@@ -33,8 +56,9 @@ body {
 button {
     background: transparent;
     cursor: pointer;
-    color: #00E6E4;
-    border: 2px solid #00E6E4;
+    color: var(--light);
+    background: var(--brown);
+    border: none;
     font-size: 1em;
     font-family: 'Aclonica', sans-serif;
     font-weight: 700;
@@ -44,8 +68,8 @@ button {
 }
 
 button:hover {
-    background: #00E6E4;
-    color: #28161C;
+    background: var(--light-brown);
+    /* color: #28161C; */
     transition: 0.5s;
 }
 .body {
@@ -87,11 +111,12 @@ button:hover {
     left: 0;
     background: rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 2px rgba(0, 0, 0, 1);
+    z-index: 100000;
 }
 
 .brand {
     position: relative;
-    color: #00E6E4;;
+    color: var(--brown);;
     font-size: 2.5em;
     cursor: pointer;
     transition: 1s;
@@ -122,7 +147,7 @@ button:hover {
 }
 
 .mainHeroSection .intro .tag {
-    color: #00E6E4;
+    color: var(--brown);
     transition: 0.5s;
 }
 
@@ -152,6 +177,31 @@ button:hover {
     font-style: italic;
 }
 
+.headerRight {
+    display: flex;
+    align-items: center;
+}
+
+.header nav {
+    margin: 0 1em;
+    display: flex;
+}
+
+.header nav .navLink {
+    padding: 0.5em;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.header nav .navLink:hover {
+    transition: 0.5s;
+    border-bottom: 2px solid var(--brown);
+}
+
+.header nav .navLink a {
+    color: var(--light);
+}
 .aboutSection {
     line-height: 2em;
     text-align: center;
@@ -159,18 +209,17 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #FB4F93;
+    background: var(--dark-gray);
     padding-bottom: 4em;
 }
 
 .avatarSection {
     width: 100%;
-    background: white;
+    background: var(--light);
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8em;
 }
 
 .avatarWrapper {
@@ -180,10 +229,12 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 8em 0;
     margin-top: 1em;
-    background: #FB4F93;
+    background: var(--dark-gray);
     overflow: hidden;
+    z-index: 100;
+    margin: 4em;
+    box-shadow: 0px 0px 4px var(--dark-gray);
 }
 
 .avatarWrapper img {
@@ -193,6 +244,10 @@ button:hover {
 }
 
 .aboutSectionText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     border-radius: 40px;
     margin-top: -8em;
@@ -200,7 +255,7 @@ button:hover {
     /* background: url(../assets/avibg.jpg); */
     background-size: cover;
     /* background: #FB4F93; */
-    padding: 4em 16em;
+    padding: 5em;
     box-shadow: 0px 0px 4px rgb(216, 216, 216);
     /* color: white; */
 }
@@ -211,5 +266,140 @@ button:hover {
 }
 
 .aboutSectionText h3 span {
-    color: #FB4F93;
+    color: var(--brown);
+}
+
+.aboutSectionText .aboutText {
+    width: 60ch;
+}
+
+.portfolioSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 3em;
+    padding-bottom: 0;
+    width: 100%;
+}
+
+.portfolioSection h3 {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin: 1em;
+}
+
+.portfolioSection .portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    padding: 3em 6em;
+    gap: 8em;
+    border-bottom: 1px solid var(--light);
+}
+
+.portfolioSection .portfolio .portfolio-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.portfolioSection .portfolio .portfolio-img img {
+    height: 90%;
+}
+
+.portfolioSection .portfolio .portfolio-details {
+    width: 50%;
+}
+
+.portfolioSection .portfolio .portfolio-details .portfolio-details-header {
+    font-family: 'Lato', sans-serif;
+    padding: 1em 0;
+    padding-top: 0;
+    font-weight: 700;
+}
+
+.portfolioSection .portfolio .portfolio-details .portfolio-details-description {
+    font-size: 0.9em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 1.5em;
+    color: var(--gray-text);
+    width: 45ch;
+}
+
+.portfolioSection .portfolio .portfolio-details .portfolio-links {
+    display: flex;
+    margin: 1.5em 0;
+}
+
+.portfolioSection .portfolio .portfolio-details .portfolio-links a {
+    padding: 0.8em 1.6em;
+    font-family: 'Lato', sans-serif;
+    border-radius: 30px;
+    margin: 0 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.portfolioSection .portfolio .portfolio-details .portfolio-links .preview-site {
+    background: var(--dark-gray);
+    color: white;
+    border: 2px solid var(--dark-gray);
+}
+
+.portfolioSection .portfolio .portfolio-details .portfolio-links .view-code {
+    border: 2px solid var(--dark-gray);
+    color: var(--dark-gray);
+}
+
+.testimonies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 3em;
+    width: 100%;
+    background: var(--dark-gray);
+    color: var(--light);
+}
+
+.testimonies h3 {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    margin: 1em;
+}
+
+.testimonies .testimonies-card {
+    background: white;
+    color: var(--dark-gray);
+    padding: 4em;
+    border-radius: 40px;
+    animation: testimony 1s;
+}
+
+.testimonies .testimonies-card .testimony {
+    width: 48ch;
+    text-align: center;
+    line-height: 1.7em;
+}
+
+.testimonies .testimonies-card .author {
+    text-align: right;
+    margin: 2em 0 0 0;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    color: var(--dark-gray);
+}
+
+.testimonies .testimonies-card .author .location {
+    margin: 0 1em;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--brown);
 }
