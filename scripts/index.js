@@ -104,12 +104,11 @@ for (let i=0; i < data.length; i++){
 }
 
     let presentTestimony = 0
-    const time = 5000;
+    const time = 8000;
 
 
     function changeTestimony(){
 
-    console.log(testimonies[presentTestimony]);
 
     document.getElementById('testimonies').innerHTML = `<div class="testimonies-card">
     <p class="testimony">${testimonies[presentTestimony].testimony}</p>
