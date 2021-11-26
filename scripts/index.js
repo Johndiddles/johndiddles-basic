@@ -3,8 +3,8 @@ const data = [
         id: 1,
         name: 'BloodHQ',
         imageUrl: '../assets/bloodhq.png',
-        previewUrl: '#',
-        codeBaseUrl: '#',
+        previewUrl: 'https://bloodhq.netlify.app/',
+        codeBaseUrl: 'https://github.com/Johndiddles/bloodfinder-fe-pjt-12',
         description: 'An app that helps medical labs and hospitals find exact blood match from nearest possible locations during emergencies and eases the delivery of critical medical supplies most especially, blood pants from labs to labs or hospitals or emergency centers. Built with ReactJs, bootstrap, redux, sass and flutterwave payment system'
     },
     // {
@@ -19,25 +19,25 @@ const data = [
         id: 3,
         name: "Bj's Comf",
         imageUrl: '../assets/bjscomf.png',
-        previewUrl: '#',
-        codeBaseUrl: '#',
+        previewUrl: 'https://bjscomf.netlify.app/',
+        codeBaseUrl: 'https://github.com/Johndiddles/e-comm',
         description: 'An e-commerce website for all kinds of wears. Built with React, redux, firebase and Sass using stripe payment system to finalize orders.'
     },
     {
         id: 4,
-        name: "Countries Rest API App",
+        name: "Countries Listing App",
         imageUrl: '../assets/bjscomf.png',
-        previewUrl: '#',
-        codeBaseUrl: '#' ,
-        description: 'An app that helps medical labs and hospitals find exact blood match from nearest possible locations during emergencies and eases the delivery of critical medical supplies most especially, blood pants from labs to labs or hospitals or emergency centers.'
+        previewUrl: 'https://jovial-curie-b94496.netlify.app/',
+        codeBaseUrl: 'https://github.com/Johndiddles/fem-countries',
+        description: 'A country listing app built with React, redux and react-router-dom. The list of countries and their data are fetched from a Rest API. An interesting feature included in this project also is the dark mode feature which helps to toggle between day and night modes. The project and its UI design was provided by FrontendMentor.io'
     },
     {
         id: 5,
         name: "Ristorante Con Fusion",
         imageUrl: '../assets/ristorante.png',
-        previewUrl: '#',
-        codeBaseUrl: '#',
-        description: 'An app that helps medical labs and hospitals find exact blood match from nearest possible locations during emergencies and eases the delivery of critical medical supplies most especially, blood pants from labs to labs or hospitals or emergency centers.' 
+        previewUrl: 'https://nifty-meitner-eb6db5.netlify.app/',
+        codeBaseUrl: 'https://bitbucket.org/JohnDiddles/learning_bootstrap/src/master/',
+        description: 'A restaurant app that allows customers to find information about the restaurant, dishes, reserve tables online and send feedbacks to the restaurant. This website was built with HTML and Bootstrap 4.' 
     },
     // {
     //     id: 6,
