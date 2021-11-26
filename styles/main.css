@@ -5,14 +5,7 @@
     scroll-behavior: smooth;
 }
 
-@keyframes testimony {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
+
 
 
 :root {
@@ -383,6 +376,9 @@ a {
     transition: 0.4s;
 }
 
+
+
+
 .testimonies {
     display: flex;
     flex-direction: column;
@@ -410,6 +406,16 @@ a {
     perspective: 1200px;
 }
 
+@keyframes testimony {
+    0% {
+        transform: rotateY(180deg);
+        opacity: 0;
+    }
+    100% {
+        transform: rotateY(-25deg);
+        opacity: 1;
+    }
+}
 
 @keyframes after {
     0% {
@@ -427,14 +433,14 @@ a {
     padding: 4em;
     margin: 1em;
     border-radius: 10px;
-    animation: testimony 1s;
+    animation: testimony 2s;
     transform: rotateY(-25deg);
     transition: 1s;
     box-shadow: 0px 0px 5px var(--gray);
 }
 
 .testimonies .testimonies-card:hover {
-    transform: rotateY(0deg);
+    transform: rotateY(5deg);
     transition: 1s;
 }
 
