@@ -62,25 +62,29 @@ const testimonies = [
         id: 1,
         name: 'Belle',
         testimony: "He's a comedian, lol, cracks me up with his funny lines in the channel. His presence was felt the moment he was added to the team; his quirkiness, swiftness to delivering tasks, good eyes for detail. There's no contention that he's a great addition to the team.",
-        location: 'Zuri Chat'
+        location: 'Zuri Chat',
+        imageUrl: '../assets/avatar.png'
     },
     {
         id: 2,
         name: 'Devvyhac',
         testimony: "He is a great developer but his modesty is out of this world. He is a funny team mate and always active. He can clone Facebook in just 2 weeks.",
-        location: 'Zuri Chat'
+        location: 'Zuri Chat',
+        imageUrl: '../assets/avatar.png'
     },
     {
         id: 3,
         name: 'Damilola Emmanuel',
         testimony: "Love his work. He completed the implementation of a design taking forever in no time. I was honestly shocked at the speed and precision with which he delivered. What I'm trying to say is, Johndiddles is an amazing developer and I'm honoured to have been able to work with him.",
-        location: 'Zuri Chat'
+        location: 'Zuri Chat',
+        imageUrl: '../assets/avatar.png'
     },
     {
         id: 4,
         name: 'Omzi',
         testimony: "A seasoned FE dev that always delivers 💪. Would love to work with him again 🙂.",
-        location: 'Zuri Chat'
+        location: 'Zuri Chat',
+        imageUrl: '../assets/avatar.png'
     }
 ]
 
@@ -111,10 +115,23 @@ for (let i=0; i < data.length; i++){
 
 
     document.getElementById('testimonies').innerHTML = `<div class="testimonies-card">
-    <p class="testimony">${testimonies[presentTestimony].testimony}</p>
-    <br>
-    <p class="author">${testimonies[presentTestimony].name}<span class="location">${testimonies[presentTestimony].location}</span></p>
-  </div>`
+      <div class="testimony-card-content">
+        <div class="testimony-card-front">
+          <p class="testimony">${testimonies[presentTestimony].testimony}</p>
+        </div>
+
+        <div class="testimony-card-back">
+        <div class="author-details">
+          <img src=${testimonies[presentTestimony].imageUrl} />
+          <p class="author">${testimonies[presentTestimony].name}
+          <br>
+          <span class="location">${testimonies[presentTestimony].location}</span></p>
+        </div>
+          
+        </div>
+      </div>
+      
+    </div>`
 
     if(presentTestimony < testimonies.length - 1){
         presentTestimony++;
