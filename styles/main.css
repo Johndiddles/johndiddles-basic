@@ -201,6 +201,9 @@ a {
 .header nav .navLink a {
   color: var(--light);
 }
+.navMenu {
+  display: none;
+}
 .aboutSection {
   line-height: 2em;
   text-align: center;
@@ -292,7 +295,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 380px;
   width: 100%;
   padding: 3em 6em;
   gap: 8em;
@@ -324,8 +327,8 @@ a {
 
 .portfolioSection .portfolio .portfolio-details .portfolio-details-description {
   font-size: 0.9em;
+  font-weight: 400;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
   line-height: 1.5em;
   color: var(--gray-text);
   width: 45ch;
@@ -431,7 +434,7 @@ a {
   min-width: 640px;
   color: var(--dark-gray);
   margin-top: 3em;
-  transition: 1s;
+  transition: 0.2s;
 }
 
 /* .testimonies .testimonies-card::after {
@@ -449,7 +452,7 @@ a {
 
 .testimony-card-content {
   position: relative;
-  transition: transform 4s;
+  transition: transform 3s;
   transform-style: preserve-3d;
   padding: 5em;
   text-align: center;
@@ -539,23 +542,220 @@ a {
   text-align: center;
 }
 
+@media screen and (max-width: 990px) {
+  .header {
+    transition: 1s;
+    padding: 0.15em 1.5em 0.15em 2em;
+  }
+  .mainHeroSection .intro {
+    font-size: 3.8em;
+    transition: 0.5s;
+  }
+  .aboutSectionText .aboutText {
+    width: 48ch;
+    color: var(--light-dark-gray);
+    font-size: 0.9em;
+  }
+  .portfolioSection {
+    padding: 5em 1.5em;
+    transition: 1s;
+  }
+  .portfolioSection .portfolio {
+    height: 360px;
+    gap: 10%;
+    padding: 3em 3em;
+    transition: 1s;
+  }
+  .portfolioSection .portfolio .portfolio-img img {
+    height: 80%;
+  }
+  .portfolioSection .portfolio .portfolio-details .portfolio-details-description  {
+    font-size: 0.8em;
+    font-weight: 400;
+    width: 36ch;
+    transition: 1s;
+  }
+  .portfolioSection .portfolio .portfolio-details .portfolio-links {
+    width: 100%;
+  }
+  .portfolioSection .portfolio .portfolio-details .portfolio-links a {
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+  }
+}
 
+@media screen and (max-width: 770px) {
+  .mainHeroSection {
+    padding: 0 2em;
+    align-items: flex-start;
+  }
+  .mainHeroSection .intro {
+    font-size: 3.2em;
+  }
+  .mainHeroSection p {
+    font-size: 0.8em;
+  }
+  .headerRight {
+    animation: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: 1s;
+    position: absolute;
+    background: rgba(54, 57, 70, 0.9);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .headerRightHeight {
+    height: 50vh;
+    transition: 0.5s;
+  }
+
+  .headerRight nav {
+    padding: 3em 0 0 0;
+  }
+
+  .headerRight nav .navLink {
+    font-size: 1em;
+    font-weight: 500;
+  }
+
+  .headerRight .contact {
+    padding: 0 0 3em 0;
+  }
+
+  @keyframes menu {
+    0% {
+      transform: rotate(-90deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes cancel {
+    0% {
+      transform: rotate(90deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  .cancel {
+    animation: cancel 1s;
+    width: 100%;
+    padding: 1em 0;
+    transition: 1s;
+  }
+
+  .cancel h3 {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    transition: 1s;
+  }
+
+  .headerRight nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .navMenu {
+    height: 3em;
+    display: flex;
+    align-items: center;
+    z-index: 100000;
+  }
+  .navMenu .menuIcon {
+    height: 50%;
+    animation: menu 1s;
+  }
+  .portfolioSection .portfolio {
+    padding: 2em 1em;
+    flex-direction: column;
+    height: fit-content;
+    gap: 2em;
+  }
+  .portfolioSection .portfolio .portfolio-img {
+    width: 100%;
+    height: 200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .portfolioSection .portfolio .portfolio-img  img {
+    height: 100%;
+  }
+
+  .portfolioSection .portfolio .portfolio-details {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
+  .portfolioSection .portfolio .portfolio-details .portfolio-details-description {
+    font-size: 0.8em;
+    width: 40ch;
+  }
+  .portfolioSection .portfolio .portfolio-details .portfolio-links {
+    justify-content: center;
+  }
+
+  .testimonies {
+    padding: 3em 1.5em;
+    padding-bottom: 28em;
+    text-align: center;
+    width: 100%;
+
+  }
+  .testimony-wrapper {
+    width: 100%;
+  }
+  .testimonies .testimonies-card {
+    min-width: 100%;
+  }
+  .testimony-card-content {
+    padding: 1em
+  }
+
+  .testimony-card-front,
+  .testimony-card-back {
+    min-height: 400px
+  }
+  .testimony {
+    font-weight: 400;
+    font-size: 0.8em;
+  }
+  .author-details {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 420px) {
     .header {
-        padding: 0.15em 1.5em;
+        padding: 0.15em 1.2em;
     }
     .brand {
-        font-size: 2em;
+        font-size: 1.8em;
     }
     .mainHeroSection {
-        padding: 0 2em;
+        padding: 0 1.2em;
+    }
+    .mainHeroSection p {
+      font-size: 0.8em;
+      font-weight: 400;
     }
     .mainHeroSection .intro {
-        font-size: 3em
+        font-size: 2.4em
     }
-    .header nav .navLink {
-        font-size: 0.8em;
-    }
+
     .contactBtn {
         font-size: 0.8em;
         padding: 0.4em 0.8;
@@ -592,15 +792,19 @@ a {
     .portfolioSection .portfolio .portfolio-details {
         width: 100%;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .portfolioSection .portfolio .portfolio-details .portfolio-details-description {
         font-size: 0.8em;
-        width: 36ch;
+        width: 30ch;
     }
     .portfolioSection .portfolio .portfolio-details .portfolio-links {
         justify-content: center;
     }
-    .testimonies {
+    /* .testimonies {
         padding: 3em 1.5em;
         padding-bottom: 28em;
         text-align: center;
@@ -625,4 +829,7 @@ a {
         font-weight: 400;
         font-size: 0.8em;
     }
+    .author-details {
+      flex-direction: column;
+    } */
 }

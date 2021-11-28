@@ -108,7 +108,7 @@ for (let i=0; i < data.length; i++){
 }
 
     let presentTestimony = 0
-    const time = 8000;
+    const time = 10000;
 
 
     function changeTestimony(){
@@ -158,3 +158,22 @@ scrollHeight >= heroHeight - headerHeight
 
 }
 
+// hamburger menu handler
+const toggleMenu = () => {
+  console.log(document.getElementById('headerRight'));
+  console.log(document.getElementById('navMenu').innerHTML)
+
+  document.getElementById('headerRight').classList.toggle('headerRightHeight');
+  document.getElementById('navMenu').innerHTML = `<div class="cancel" onclick="toggleMenu2()">
+    <h3>X</h3>
+  </div>`
+}
+
+const toggleMenu2 = () => {
+
+  if(screen.width <= 770){
+    document.getElementById('headerRight').classList.toggle('headerRightHeight');
+
+    document.getElementById('navMenu').innerHTML = `<img src="./assets/menu.png" alt="menu icon" class="menuIcon" onclick="toggleMenu()">`
+  } 
+}
