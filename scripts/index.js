@@ -160,9 +160,6 @@ scrollHeight >= heroHeight - headerHeight
 
 // hamburger menu handler
 const toggleMenu = () => {
-  console.log(document.getElementById('headerRight'));
-  console.log(document.getElementById('navMenu').innerHTML)
-
   document.getElementById('headerRight').classList.toggle('headerRightHeight');
   document.getElementById('navMenu').innerHTML = `<div class="cancel" onclick="toggleMenu2()">
     <h3>X</h3>
