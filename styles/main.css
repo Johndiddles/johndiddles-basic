@@ -675,6 +675,18 @@ a {
     height: 50%;
     animation: menu 1s;
   }
+
+  .aboutSectionText {
+    padding: 4em 1.5em;
+  }
+  .aboutSectionText h3 {
+    font-size: 1.5em;
+  }
+  .aboutSectionText .aboutText {
+    font-size: 0.8em;
+    width: 36ch;
+    line-height: 1.8em;
+  }
   .portfolioSection .portfolio {
     padding: 2em 1em;
     flex-direction: column;
