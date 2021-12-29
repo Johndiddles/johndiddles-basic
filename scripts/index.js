@@ -19,7 +19,7 @@ const data = [
         id: 3,
         name: "Bj's Comf",
         imageUrl: '../assets/bjscomf.png',
-        previewUrl: 'https://bjscomf.netlify.app/',
+        previewUrl: 'https://bjscomf-v2.netlify.app/',
         codeBaseUrl: 'https://github.com/Johndiddles/e-comm',
         description: 'An e-commerce website for all kinds of wears. Built with React, redux, firebase and Sass using stripe payment system to finalize orders.'
     },
