@@ -26,7 +26,7 @@ const data = [
     {
         id: 4,
         name: "Countries Listing App",
-        imageUrl: '../assets/bjscomf.png',
+        imageUrl: '../assets/countries.png',
         previewUrl: 'https://jovial-curie-b94496.netlify.app/',
         codeBaseUrl: 'https://github.com/Johndiddles/fem-countries',
         description: 'A country listing app built with React, redux and react-router-dom. The list of countries and their data are fetched from a Rest API. An interesting feature included in this project also is the dark mode feature which helps to toggle between day and night modes. The project and its UI design was provided by FrontendMentor.io'
