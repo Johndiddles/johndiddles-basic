@@ -29,10 +29,18 @@ const data = [
         imageUrl: '../assets/countries.png',
         previewUrl: 'https://jovial-curie-b94496.netlify.app/',
         codeBaseUrl: 'https://github.com/Johndiddles/fem-countries',
-        description: 'A country listing app built with React, redux and react-router-dom. The list of countries and their data are fetched from a Rest API. An interesting feature included in this project also is the dark mode feature which helps to toggle between day and night modes. The project and its UI design was provided by FrontendMentor.io'
+        description: 'An app that helps you set your budgets and helps you keep track of all your expenses. Built with ReactJs, and Bootstrap 5.'
     },
     {
-        id: 5,
+      id: 5,
+      name: 'Budget App',
+      imageUrl: '../assets/budget.png',
+      previewUrl: 'https://budget-app-sepia-ten.vercel.app',
+      codeBaseUrl: 'https://github.com/Johndiddles/budget-app',
+      description: 'An app that helps medical labs and hospitals find exact blood match from nearest possible locations during emergencies and eases the delivery of critical medical supplies most especially, blood pants from labs to labs or hospitals or emergency centers. Built with ReactJs, bootstrap, redux, sass and flutterwave payment system'
+    },
+    {
+        id: 6,
         name: "Ristorante Con Fusion",
         imageUrl: '../assets/ristorante.png',
         previewUrl: 'https://nifty-meitner-eb6db5.netlify.app/',
@@ -40,7 +48,7 @@ const data = [
         description: 'A restaurant app that allows customers to find information about the restaurant, dishes, reserve tables online and send feedbacks to the restaurant. This website was built with HTML and Bootstrap 4.' 
     },
     // {
-    //     id: 6,
+    //     id: 7,
     //     name: 'Blogr',
     //     imageUrl: p6,
     //     previewUrl: '#',
@@ -48,7 +56,7 @@ const data = [
     //     description: 'An app that helps medical labs and hospitals find exact blood match from nearest possible locations during emergencies and eases the delivery of critical medical supplies most especially, blood pants from labs to labs or hospitals or emergency centers.' 
     // },
     // {
-    //     id: 7,
+    //     id: 8,
     //     name: 'Faq',
     //     imageUrl: p7,
     //     previewUrl: '#',
