@@ -40,29 +40,21 @@ const data = [
       description: 'An app that helps medical labs and hospitals find exact blood match from nearest possible locations during emergencies and eases the delivery of critical medical supplies most especially, blood pants from labs to labs or hospitals or emergency centers. Built with ReactJs, bootstrap, redux, sass and flutterwave payment system'
     },
     {
-        id: 6,
+      id: 6,
+      name: "Music App",
+      imageUrl: '../assets/music-app.png',
+      previewUrl: 'https://diddles-music.vercel.app',
+      codeBaseUrl: 'https://github.com/Johndiddles/music-player',
+      description: 'A restaurant app that allows customers to find information about the restaurant, dishes, reserve tables online and send feedbacks to the restaurant. This website was built with HTML and Bootstrap 4.' 
+  },
+    {
+        id: 7,
         name: "Ristorante Con Fusion",
         imageUrl: '../assets/ristorante.png',
         previewUrl: 'https://nifty-meitner-eb6db5.netlify.app/',
         codeBaseUrl: 'https://bitbucket.org/JohnDiddles/learning_bootstrap/src/master/',
         description: 'A restaurant app that allows customers to find information about the restaurant, dishes, reserve tables online and send feedbacks to the restaurant. This website was built with HTML and Bootstrap 4.' 
-    },
-    // {
-    //     id: 7,
-    //     name: 'Blogr',
-    //     imageUrl: p6,
-    //     previewUrl: '#',
-    //     codeBaseUrl: '#',
-    //     description: 'An app that helps medical labs and hospitals find exact blood match from nearest possible locations during emergencies and eases the delivery of critical medical supplies most especially, blood pants from labs to labs or hospitals or emergency centers.' 
-    // },
-    // {
-    //     id: 8,
-    //     name: 'Faq',
-    //     imageUrl: p7,
-    //     previewUrl: '#',
-    //     codeBaseUrl: '#' ,
-    //     description: 'An app that helps medical labs and hospitals find exact blood match from nearest possible locations during emergencies and eases the delivery of critical medical supplies most especially, blood pants from labs to labs or hospitals or emergency centers.'
-    // }
+    }
 ]
 
 const testimonies = [
@@ -108,8 +100,8 @@ for (let i=0; i < data.length; i++){
       <h2 class="portfolio-details-header">${portfolio.name}</h2>
       <p class="portfolio-details-description">${portfolio.description}</p>
       <div class="portfolio-links">
-        <a href=${portfolio.previewUrl} class="preview-site">Preview</a>
-        <a href=${portfolio.codeBaseUrl} class="view-code">View code</a>
+        <a href=${portfolio.previewUrl} class="preview-site" target="_blank">Preview</a>
+        <a href=${portfolio.codeBaseUrl} class="view-code" target="_blank">View code</a>
       </div>
     </div>
   </div>`
