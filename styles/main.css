@@ -535,9 +535,23 @@ a {
   background: var(--dark-gray);
   color: var(--gray-text);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   text-align: center;
+  padding: 0.5em;
+}
+
+.footer_author {
+  border-right: 1px dotted var(--gray);
+  padding: 0.5em 1em;
+}
+
+.footer_links {
+  padding: 0.5em 1em;
+}
+.footer_links_item {
+  margin: auto 0.5em;
 }
 
 @media screen and (max-width: 990px) {
