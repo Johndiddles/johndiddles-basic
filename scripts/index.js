@@ -45,7 +45,7 @@ const data = [
       imageUrl: '../assets/music-app.png',
       previewUrl: 'https://diddles-music.vercel.app',
       codeBaseUrl: 'https://github.com/Johndiddles/music-player',
-      description: 'A restaurant app that allows customers to find information about the restaurant, dishes, reserve tables online and send feedbacks to the restaurant. This website was built with HTML and Bootstrap 4.' 
+      description: 'A basic music player built with vanilla JS. Next version of the music player will be fetching music files from a free open api with more features to be added.' 
   },
     {
         id: 7,
@@ -91,7 +91,8 @@ const testimonies = [
 for (let i=0; i < data.length; i++){
     const portfolio = data[i];
 
-    document.getElementById('portfolio').innerHTML += `<div class="portfolio">
+    document.getElementById('portfolio').innerHTML += `
+    <div class="portfolio">
     <div class="portfolio-img">
       <img src=${portfolio.imageUrl} alt="bloodhq">
     </div>
@@ -114,7 +115,8 @@ for (let i=0; i < data.length; i++){
     function changeTestimony(){
 
 
-    document.getElementById('testimonies').innerHTML = `<div class="testimonies-card">
+    document.getElementById('testimonies').innerHTML = `
+    <div class="testimonies-card">
       <div class="testimony-card-content">
         <div class="testimony-card-front">
           <p class="testimony">${testimonies[presentTestimony].testimony}</p>
