@@ -1,59 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>John Adepelumi</title>
-    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/main.css">
-</head>
-<body>
-  <div class="body">
-    <!-- Header and Hero Section  -->
-    <div class="header">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <div
+      class="body"
+      style="background: url('./assets/mark-basarab-1OtUkD_8svc-unsplash.jpg')"
+    >
+      <!-- Header and Hero Section  -->
+      <div class="header">
         <div class="brand">
+          <a href="./" class="brand-link">
             <h2>J<span>J</span></h2>
+          </a>
         </div>
-        <div class="headerRight">
-
-            <nav>
-                <div class="navLink">
-                    <a href="index.html#home">Home</a>
-                </div>
-                <div class="navLink">
-                    <a href="#about">About</a>
-                </div>
-                <div class="navLink">
-                    <a href="#portfolio">Portfolio</a>
-                </div>
-            </nav>
-
-            <div class="contact">
-                <a href="contact.html" class="contactBtn">
-                Say Hello
-                </a>
+        <div class="headerRight" id="headerRight">
+          <nav>
+            <div class="navLink" onclick="toggleMenu2()">
+              <a href="index.html#home">Home</a>
             </div>
+            <div class="navLink" onclick="toggleMenu2()">
+              <a href="index.html#about">About</a>
+            </div>
+            <div class="navLink" onclick="toggleMenu2()">
+              <a href="index.html#portfolio">Portfolio</a>
+            </div>
+            <div class="navLink" onclick="toggleMenu2()">
+              <a href="index.html#testimonies">Testimonies</a>
+            </div>
+          </nav>
+
+          <div class="contact" onclick="toggleMenu2()">
+            <a href="./contact.html" class="contactBtn"> Say Hello </a>
+          </div>
         </div>
-    </div>
+        <div class="navMenu" id="navMenu">
+          <img
+            src="./assets/menu.png"
+            alt="menu icon"
+            class="menuIcon"
+            onclick="toggleMenu()"
+          />
+        </div>
+      </div>
 
-    <div class="contact">
-        <form action="">
-            <div>
-                <input type="text" placeholder="ename" name="" id="">
-                <input type="email" placeholder="email address" name="" id="">
+      <video autoplay muted loop id="myVideo">
+        <source src="./assets/production ID_5091624.mp4" type="video/mp4" />
+      </video>
+
+      <div class="contact-page">
+        <!-- <div class="contact-page__left">
+          <img src="./assets/quino-al-xhGMQ_nYWqU-unsplash.jpg" alt="" />
+        </div> -->
+        <div class="contact-page__right">
+          <form action="" id="form">
+            <h2>
+              Say Hello!<br />
+              <span></span>
+            </h2>
+            <div class="form-group-wrapper">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  placeholder="please, enter your name"
+                  name="name"
+                  id="name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  placeholder="email address"
+                  name="email"
+                  id="email"
+                  required
+                />
+              </div>
             </div>
-        </form>
-    </div>
 
+            <div class="form-group">
+              <label for="email">Message</label>
+              <textarea
+                type="message"
+                placeholder="Message"
+                name="message"
+                id="message"
+                class="message"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group submitBtn-wrapper">
+              <button type="submit" onclick="formHandler(event)" id="submit">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
 
-    <!-- footer -->
-    <footer class="footer" id="footer">
-        Designed and built by Johndiddles
+      <!-- footer -->
+      <footer class="footer" id="footer">
+        <div class="footer_author">Designed and built by Johndiddles</div>
+        <div class="footer_links">
+          <a
+            href="https://www.linkedin.com/in/john-adepelumi-52b22b128/"
+            class="footer_links_item"
+          >
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://github.com/johndiddles" class="footer_links_item">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://twitter.com/DiddlesCode" class="footer_links_item">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a
+            href="https://wa.me/2348181933012?text=Hi%John,%20would%20you%20be%20interested%20in%20a%20frontend%20role/gig?"
+            class="footer_links_item"
+          >
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/JohnAdepelumi/"
+            class="footer_links_item"
+          >
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="mailto:johnadepelumi@yahoo.com" class="footer_links_item">
+            <i class="bi bi-envelope"></i>
+          </a>
+        </div>
       </footer>
     </div>
-      
-  
-    <script src="./scripts/index.js"></script>
+
+    <!-- <script src="./scripts/index.js"></script> -->
+    <script src="./scripts/menuToggler.js"></script>
+    <script src="./scripts/form.js"></script>
   </body>
-  </html>
+</html>
