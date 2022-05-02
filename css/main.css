@@ -538,6 +538,7 @@ a {
   background: var(--dark-gray);
   color: var(--light);
   border-bottom: 1px solid var(--light-dark-gray);
+  z-index: 0;
 }
 
 .testimonies h3 {
