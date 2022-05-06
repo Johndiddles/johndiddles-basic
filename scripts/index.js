@@ -105,7 +105,7 @@ for (let i = 0; i < data.length; i++) {
   document.getElementById("portfolio").innerHTML += `
     <div class="portfolio">
     <div class="portfolio-img">
-      <img src=${portfolio.imageUrl} alt="bloodhq">
+      <img loading="lazy" src=${portfolio.imageUrl} alt="bloodhq">
     </div>
 
     <div class="portfolio-details">
@@ -118,6 +118,21 @@ for (let i = 0; i < data.length; i++) {
     </div>
   </div>`;
 }
+
+("use strict");
+(function () {
+  var cursorInner = document.querySelector(".cursor-inner");
+  var cursorOuter = document.querySelector(".cursor-outer");
+
+  var editCursor = function editCursor(event) {
+    cursorInner.style.left = event.clientX + "px";
+    cursorInner.style.top = event.clientY + "px";
+    cursorOuter.style.left = event.clientX + "px";
+    cursorOuter.style.top = event.clientY + "px";
+  };
+
+  window.addEventListener("mousemove", editCursor);
+})();
 
 let presentTestimony = 0;
 const time = 10000;
@@ -132,7 +147,7 @@ function changeTestimony() {
 
         <div class="testimony-card-back">
         <div class="author-details">
-          <img src=${testimonies[presentTestimony].imageUrl} />
+          <img lodaing="lazy" src=${testimonies[presentTestimony].imageUrl} />
           <p class="author">${testimonies[presentTestimony].name}
           <br>
           <span class="location">${testimonies[presentTestimony].location}</span></p>

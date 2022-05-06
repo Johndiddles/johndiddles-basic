@@ -21,7 +21,61 @@ body {
   overflow: overlay;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  position: relative;
+  cursor: none;
   /* background: var(--light); */
+}
+
+a {
+  cursor: none;
+}
+
+@keyframes animateCursorOuter {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.cursor-inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  background: var(--light-brown);
+  // margin-left: -4px;
+  // margin-top: -4px;
+  border-radius: 50%;
+  z-index: 10000;
+  transform: translate3d(-50%, -50%, 0);
+  pointer-events: none;
+  // animation: animateCursorOuter 0.5s infinite;
+}
+
+.cursor-outer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: 0.001em solid var(--light-brown);
+  box-shadow: 1px 0 20px var(--light-brown);
+  opacity: 0.3;
+  margin-left: -15px;
+  margin-top: -15px;
+  border-radius: 50%;
+  z-index: 10000;
+  // transform: translate3d(-50%, -50%, 0);
+  transition: 0.2s ease-out;
+  pointer-events: none;
+  animation: animateCursorOuter 0.5s infinite;
 }
 
 a {
@@ -49,7 +103,7 @@ a {
 
 .contactBtn {
   background: transparent;
-  cursor: pointer;
+  cursor: none;
   color: var(--light);
   background: var(--brown);
   border: none;
@@ -129,7 +183,7 @@ a {
   position: relative;
   color: var(--brown);
   font-size: 2.5em;
-  cursor: pointer;
+  cursor: none;
   transition: 1s;
 }
 
@@ -154,7 +208,7 @@ a {
   font-size: 5em;
   font-weight: 500;
   font-family: "Aclonica", sans-serif;
-  cursor: pointer;
+  cursor: none;
 }
 
 .mainHeroSection .intro .tag {
@@ -202,7 +256,7 @@ a {
   padding: 0.5em;
   border-bottom: 2px solid transparent;
   transition: 0.5s;
-  cursor: pointer;
+  cursor: none;
 }
 
 .header nav .navLink:hover {
@@ -691,7 +745,7 @@ a {
           border: 0px;
           border-radius: 5px;
           margin: 1em 0;
-          cursor: pointer;
+          cursor: none;
           // box-shadow: 1px 2px 4px var(--light);
         }
       }
