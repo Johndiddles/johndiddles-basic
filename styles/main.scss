@@ -17,12 +17,14 @@
 }
 
 body {
+  width: 100vw;
   font-family: "Montserrat", sans-serif;
   overflow: overlay;
   overflow-x: hidden;
   scroll-behavior: smooth;
   position: relative;
   cursor: none;
+
   /* background: var(--light); */
 }
 
@@ -124,7 +126,7 @@ a {
   display: flex;
   flex-direction: column;
   position: relative;
-  overflow: overlay;
+  // overflow: overlay;
 }
 
 .hero {
