@@ -81,17 +81,17 @@ a {
   left: 0;
   width: 30px;
   height: 30px;
-  background: transparent;
-  border: 0.001em solid var(--light-brown);
-  -webkit-box-shadow: 1px 0 20px var(--light-brown);
-          box-shadow: 1px 0 20px var(--light-brown);
-  opacity: 0.3;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(0.075em);
+          backdrop-filter: blur(0.075em);
+  -webkit-box-shadow: 0 0 20px var(--light-brown);
+          box-shadow: 0 0 20px var(--light-brown);
   margin-left: -15px;
   margin-top: -15px;
   border-radius: 50%;
   z-index: 10000;
-  -webkit-transition: 0.2s ease-out;
-  transition: 0.2s ease-out;
+  -webkit-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
   pointer-events: none;
   -webkit-animation: animateCursorOuter 0.5s infinite;
           animation: animateCursorOuter 0.5s infinite;
@@ -265,6 +265,13 @@ a {
   font-weight: 500;
   font-family: "Aclonica", sans-serif;
   cursor: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.mainHeroSection .intro:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .mainHeroSection .intro .tag {
@@ -488,6 +495,18 @@ a {
   padding: 3em 6em;
   gap: 8em;
   border-bottom: 1px solid var(--light);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.portfolioSection .portfolio:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.portfolioSection .portfolio:nth-child(odd) .portfolio-img img:hover {
+  -webkit-transform: scale(1.2) rotate(-5deg);
+          transform: scale(1.2) rotate(-5deg);
 }
 
 .portfolioSection .portfolio .portfolio-img {
@@ -507,6 +526,13 @@ a {
 
 .portfolioSection .portfolio .portfolio-img img {
   height: 90%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.portfolioSection .portfolio .portfolio-img img:hover {
+  -webkit-transform: scale(1.2) rotate(5deg);
+          transform: scale(1.2) rotate(5deg);
 }
 
 .portfolioSection .portfolio .portfolio-details {
