@@ -66,16 +66,16 @@ a {
   left: 0;
   width: 30px;
   height: 30px;
-  background: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(0.075em);
-  box-shadow: 0 0 20px var(--light-brown);
+  // background: rgba(0, 0, 0, 0.1);
+  // backdrop-filter: blur(0.075em);
+  box-shadow: 0 0 4px var(--light-brown);
   margin-left: -15px;
   margin-top: -15px;
   border-radius: 50%;
   z-index: 10000;
   transition: 0.15s ease-out;
   pointer-events: none;
-  animation: animateCursorOuter 0.5s infinite;
+  animation: animateCursorOuter 1s infinite;
 }
 
 a {
@@ -847,17 +847,24 @@ a {
     position: absolute;
     background: rgba(54, 57, 70, 0.9);
     top: 0;
-    left: 0;
-    width: 100vw;
-    height: 0px;
+    right: 0;
+    // width: 0vw;
+    width: 85vw;
+    height: 100vh;
     overflow: hidden;
-    transition: 0.5s;
+    transition: 1s;
+    transform: translateX(100vw);
+    opacity: 0.2;
   }
 
   .headerRightHeight {
-    height: 50vh;
-    transition: 0.5s;
-    backdrop-filter: blur(30px);
+    transform: translateX(0vw);
+    height: 100vh;
+    transition: 0.8s;
+    backdrop-filter: blur(10px);
+    background: rgba(#1a1b22, 0.85);
+    opacity: 1;
+    // text-transform: uppercase;
   }
 
   .headerRight nav {

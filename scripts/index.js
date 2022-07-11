@@ -1,5 +1,15 @@
 const data = [
   {
+    id: 0,
+    name: "DLI Library",
+    imageUrl: "../assets/library.png",
+    previewUrl: "https://dli-library.vercel.app/",
+    codeBaseUrl: "https://github.com/Johndiddles/dli-library",
+    description:
+      "An e-library that allows you download soft copies of all modules freely available to all dli students of the University of Lagos. This project seeks to ease access to study materials for student. Built with React Js, Redux, Node Js, Express Js, Mongo DB",
+  },
+
+  {
     id: 1,
     name: "BloodHQ",
     imageUrl: "../assets/bloodhq.png",
