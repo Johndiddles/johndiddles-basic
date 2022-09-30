@@ -502,11 +502,6 @@ a {
           transform: scale(1.05);
 }
 
-.portfolioSection .portfolio:nth-child(odd) .portfolio-img img:hover {
-  -webkit-transform: scale(1.2) rotate(-5deg);
-          transform: scale(1.2) rotate(-5deg);
-}
-
 .portfolioSection .portfolio .portfolio-img {
   width: 50%;
   height: 100%;
@@ -526,11 +521,6 @@ a {
   height: 90%;
   -webkit-transition: 1s;
   transition: 1s;
-}
-
-.portfolioSection .portfolio .portfolio-img img:hover {
-  -webkit-transform: scale(1.2) rotate(5deg);
-          transform: scale(1.2) rotate(5deg);
 }
 
 .portfolioSection .portfolio .portfolio-details {

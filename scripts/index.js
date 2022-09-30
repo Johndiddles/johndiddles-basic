@@ -42,7 +42,7 @@ const data = [
     previewUrl: "https://jovial-curie-b94496.netlify.app/",
     codeBaseUrl: "https://github.com/Johndiddles/fem-countries",
     description:
-      "An app that helps you set your budgets and helps you keep track of all your expenses. Built with ReactJs, and Bootstrap 5.",
+      "An app that provides learners with a list of all countries in the world and good-to-know facts about these countries. This was built with ReactJs. ",
   },
   // {
   //   id: 5,

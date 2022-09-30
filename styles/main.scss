@@ -380,11 +380,11 @@ a {
     transform: scale(1.05);
   }
 
-  &:nth-child(odd) {
-    .portfolio-img img:hover {
-      transform: scale(1.2) rotate(-5deg);
-    }
-  }
+  // &:nth-child(odd) {
+  //   .portfolio-img img:hover {
+  //     transform: scale(1.2) rotate(-5deg);
+  //   }
+  // }
 }
 
 .portfolioSection .portfolio .portfolio-img {
@@ -399,9 +399,9 @@ a {
   height: 90%;
   transition: 1s;
 
-  &:hover {
-    transform: scale(1.2) rotate(5deg);
-  }
+  // &:hover {
+  //   transform: scale(1.2) rotate(5deg);
+  // }
 }
 
 .portfolioSection .portfolio .portfolio-details {
