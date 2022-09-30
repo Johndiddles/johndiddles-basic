@@ -44,24 +44,24 @@ const data = [
     description:
       "An app that helps you set your budgets and helps you keep track of all your expenses. Built with ReactJs, and Bootstrap 5.",
   },
-  {
-    id: 5,
-    name: "Budget App",
-    imageUrl: "../assets/budget.png",
-    previewUrl: "https://budget-app-sepia-ten.vercel.app",
-    codeBaseUrl: "https://github.com/Johndiddles/budget-app",
-    description:
-      "An app that helps medical labs and hospitals find exact blood match from nearest possible locations during emergencies and eases the delivery of critical medical supplies most especially, blood pants from labs to labs or hospitals or emergency centers. Built with ReactJs, bootstrap, redux, sass and flutterwave payment system",
-  },
-  {
-    id: 6,
-    name: "Music App",
-    imageUrl: "../assets/music-app.png",
-    previewUrl: "https://diddles-music.vercel.app",
-    codeBaseUrl: "https://github.com/Johndiddles/music-player",
-    description:
-      "A basic music player built with vanilla JS. Next version of the music player will be fetching music files from a free open api with more features to be added.",
-  },
+  // {
+  //   id: 5,
+  //   name: "Budget App",
+  //   imageUrl: "../assets/budget.png",
+  //   previewUrl: "https://budget-app-sepia-ten.vercel.app",
+  //   codeBaseUrl: "https://github.com/Johndiddles/budget-app",
+  //   description:
+  //     "An app that helps medical labs and hospitals find exact blood match from nearest possible locations during emergencies and eases the delivery of critical medical supplies most especially, blood pants from labs to labs or hospitals or emergency centers. Built with ReactJs, bootstrap, redux, sass and flutterwave payment system",
+  // },
+  // {
+  //   id: 6,
+  //   name: "Music App",
+  //   imageUrl: "../assets/music-app.png",
+  //   previewUrl: "https://diddles-music.vercel.app",
+  //   codeBaseUrl: "https://github.com/Johndiddles/music-player",
+  //   description:
+  //     "A basic music player built with vanilla JS. Next version of the music player will be fetching music files from a free open api with more features to be added.",
+  // },
   {
     id: 7,
     name: "Ristorante Con Fusion",
@@ -112,7 +112,8 @@ const testimonies = [
 for (let i = 0; i < data.length; i++) {
   const portfolio = data[i];
 
-  document.getElementById("portfolio").innerHTML += `
+  document.getElementById("portfolio")
+    ? (document.getElementById("portfolio").innerHTML += `
     <div class="portfolio">
     <div class="portfolio-img">
       <img loading="lazy" src=${portfolio.imageUrl} alt="bloodhq">
@@ -126,7 +127,8 @@ for (let i = 0; i < data.length; i++) {
         <a href=${portfolio.codeBaseUrl} class="view-code" target="_blank">View code</a>
       </div>
     </div>
-  </div>`;
+  </div>`)
+    : null;
 }
 
 ("use strict");
@@ -148,7 +150,8 @@ let presentTestimony = 0;
 const time = 10000;
 
 function changeTestimony() {
-  document.getElementById("testimonies").innerHTML = `
+  document.getElementById("testimonies")
+    ? (document.getElementById("testimonies").innerHTML = `
     <div class="testimonies-card">
       <div class="testimony-card-content">
         <div class="testimony-card-front">
@@ -166,7 +169,8 @@ function changeTestimony() {
         </div>
       </div>
       
-    </div>`;
+    </div>`)
+    : null;
 
   if (presentTestimony < testimonies.length - 1) {
     presentTestimony++;

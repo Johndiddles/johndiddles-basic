@@ -19,7 +19,9 @@
     />
     <link rel="stylesheet" href="/css/main.min.css" />
   </head>
-  <body>
+  <body class="contactPage">
+    <div class="cursor-outer"></div>
+    <div class="cursor-inner"></div>
     <div class="body" style="background: rgba(0, 0, 0, 0.8)">
       <!-- Header and Hero Section  -->
       <div class="header">
@@ -58,9 +60,9 @@
         </div>
       </div>
 
-      <video autoplay muted loop id="myVideo">
+      <!-- <video autoplay muted loop id="myVideo">
         <source src="./assets/videobg.mp4" type="video/mp4" />
-      </video>
+      </video> -->
 
       <div class="contact-page">
         <!-- <div class="contact-page__left">
@@ -69,15 +71,15 @@
         <div class="contact-page__right">
           <form action="" id="form">
             <h2>
-              Say Hello!<br />
-              <span></span>
+              Say Hello
+              <span>!</span>
             </h2>
             <div class="form-group-wrapper">
               <div class="form-group">
                 <label for="name">Name</label>
                 <input
                   type="text"
-                  placeholder="please, enter your name"
+                  placeholder="Your Name"
                   name="name"
                   id="name"
                   required
@@ -87,7 +89,7 @@
                 <label for="email">Email Address</label>
                 <input
                   type="email"
-                  placeholder="email address"
+                  placeholder="Email Address"
                   name="email"
                   id="email"
                   required
@@ -151,6 +153,7 @@
     </div>
 
     <!-- <script src="./scripts/index.js"></script> -->
+    <script src="./scripts/index.js"></script>
     <script src="./scripts/menuToggler.js"></script>
     <script src="./scripts/form.js"></script>
   </body>

@@ -12,6 +12,7 @@
   --light-brown: #b79582;
   --gray: #938b82;
   --brown: #805d4e;
+  --dark-brown: #6f4f42;
   --dark-gray: #2c2e39;
   --light-dark-gray: #363946;
   --gray-text: #8b8b8b;
@@ -70,7 +71,7 @@ a {
   height: 5px;
   background: var(--light-brown);
   border-radius: 50%;
-  z-index: 10000;
+  z-index: 1000000;
   -webkit-transform: translate3d(-50%, -50%, 0);
           transform: translate3d(-50%, -50%, 0);
   pointer-events: none;
@@ -87,7 +88,7 @@ a {
   margin-left: -15px;
   margin-top: -15px;
   border-radius: 50%;
-  z-index: 10000;
+  z-index: 1000000;
   -webkit-transition: 0.15s ease-out;
   transition: 0.15s ease-out;
   pointer-events: none;
@@ -134,7 +135,7 @@ a {
 }
 
 .contactBtn:hover {
-  background: var(--light-brown);
+  background: var(--dark-brown);
   /* color: #28161C; */
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -853,6 +854,12 @@ a {
 
 .footer_links_item {
   margin: auto 0.5em;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.footer_links_item:hover {
+  color: var(--light);
 }
 
 #myVideo {
@@ -885,6 +892,19 @@ a {
   font-family: "Montserrat", sans-serif;
   overflow: hidden;
   color: white;
+  position: relative;
+}
+
+.contact-page::before {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 .contact-page__left {
@@ -916,9 +936,9 @@ a {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 1.5rem 2rem;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.3);
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.075);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   background-clip: border-box;
@@ -940,6 +960,12 @@ a {
   font-family: "aclonica", sans-serif;
   font-weight: 500;
   font-size: 2em;
+  padding: 0.5rem 0 1rem 0;
+}
+
+.contact-page__right form h2 span {
+  color: var(--light-brown);
+  margin-left: -0.25rem;
 }
 
 .contact-page__right form .form-group-wrapper {
@@ -968,6 +994,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0.5rem 0;
+  gap: 0.5rem;
 }
 
 .contact-page__right form .form-group label {
@@ -1024,13 +1051,20 @@ a {
   font-size: 0.9em;
   font-weight: 600;
   width: 100%;
-  background: white;
+  background: var(--light);
   color: var(--dark-gray);
   padding: 1em;
   border: 0px;
   border-radius: 5px;
   margin: 1em 0;
   cursor: none;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.contact-page__right form .submitBtn-wrapper button:hover {
+  background: var(--dark-brown);
+  color: var(--light);
 }
 
 .dark-header {
