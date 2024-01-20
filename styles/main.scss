@@ -133,7 +133,8 @@ a {
 .hero {
   width: 100%;
   height: 100vh;
-  background: url(../assets/bg5.png);
+  background-color: rgba(0, 0, 0, 0.8);
+  background-image: url(../assets/bg5.png);
   background-size: cover;
   position: relative;
 
@@ -151,7 +152,7 @@ a {
 .heroContent {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.75);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -345,7 +346,8 @@ a {
 }
 
 .aboutSectionText .aboutText {
-  width: 60ch;
+  width: auto;
+  max-width: 80ch;
 }
 
 .portfolioSection {
@@ -823,7 +825,7 @@ a {
     transition: 0.5s;
   }
   .aboutSectionText .aboutText {
-    width: 48ch;
+    max-width: 48ch;
     color: var(--light-dark-gray);
     font-size: 0.9em;
   }
@@ -966,7 +968,7 @@ a {
   }
   .aboutSectionText .aboutText {
     font-size: 0.8em;
-    width: 36ch;
+    max-width: 40ch;
     line-height: 1.8em;
   }
   .portfolioSection .portfolio {
@@ -1063,7 +1065,7 @@ a {
     padding: 0.4em 0.8;
   }
   .aboutSectionText .aboutText {
-    width: 30ch;
+    max-width: 32ch;
   }
   .portfolioSection {
     padding: 4em 1.5em;
