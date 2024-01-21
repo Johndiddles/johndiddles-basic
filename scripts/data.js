@@ -1,7 +1,7 @@
 export const projects = [
   {
     name: "DLI Library",
-    imageUrl: "../assets/library.png",
+    imageUrl: "../assets/library.avif",
     previewUrl: "https://dli-library.vercel.app/",
     codeBaseUrl: "https://github.com/Johndiddles/dli-library",
     description:
@@ -9,7 +9,7 @@ export const projects = [
   },
   {
     name: "RagauNG",
-    imageUrl: "../assets/ragaung.png",
+    imageUrl: "../assets/ragaung.avif",
     previewUrl: "https://ragaung.com/",
     codeBaseUrl: null,
     description:
@@ -17,7 +17,7 @@ export const projects = [
   },
   {
     name: "Middlechase Properties",
-    imageUrl: "../assets/middlechase.png",
+    imageUrl: "../assets/middlechase.avif",
     previewUrl: "https://middlechase.vercel.app/",
     codeBaseUrl: null,
     description:
@@ -26,7 +26,7 @@ export const projects = [
 
   {
     name: "BloodHQ",
-    imageUrl: "../assets/bloodhq.png",
+    imageUrl: "../assets/bloodhq.avif",
     previewUrl: "https://bloodhq.netlify.app/",
     codeBaseUrl: "https://github.com/Johndiddles/bloodfinder-fe-pjt-12",
     description:
@@ -34,7 +34,7 @@ export const projects = [
   },
   // {
   //   name: "Bj's Comf",
-  //   imageUrl: "../assets/bjscomf.png",
+  //   imageUrl: "../assets/bjscomf.avif",
   //   previewUrl: "https://bjscomf-v2.netlify.app/",
   //   codeBaseUrl: "https://github.com/Johndiddles/e-comm",
   //   description:
@@ -42,7 +42,7 @@ export const projects = [
   // },
   {
     name: "Countries Listing App",
-    imageUrl: "../assets/countries.png",
+    imageUrl: "../assets/countries.avif",
     previewUrl: "https://jovial-curie-b94496.netlify.app/",
     codeBaseUrl: "https://github.com/Johndiddles/fem-countries",
     description:
@@ -50,7 +50,7 @@ export const projects = [
   },
   // {
   //   name: "Budget App",
-  //   imageUrl: "../assets/budget.png",
+  //   imageUrl: "../assets/budget.avif",
   //   previewUrl: "https://budget-app-sepia-ten.vercel.app",
   //   codeBaseUrl: "https://github.com/Johndiddles/budget-app",
   //   description:
@@ -58,7 +58,7 @@ export const projects = [
   // },
   // {
   //   name: "Music App",
-  //   imageUrl: "../assets/music-app.png",
+  //   imageUrl: "../assets/music-app.avif",
   //   previewUrl: "https://diddles-music.vercel.app",
   //   codeBaseUrl: "https://github.com/Johndiddles/music-player",
   //   description:
@@ -66,7 +66,7 @@ export const projects = [
   // },
   {
     name: "Ristorante Con Fusion",
-    imageUrl: "../assets/ristorante.png",
+    imageUrl: "../assets/ristorante.avif",
     previewUrl: "https://nifty-meitner-eb6db5.netlify.app/",
     codeBaseUrl:
       "https://bitbucket.org/JohnDiddles/learning_bootstrap/src/master/",
@@ -82,7 +82,7 @@ export const testimonies = [
     testimony:
       "He's a comedian, lol, cracks me up with his funny lines in the channel. His presence was felt the moment he was added to the team; his quirkiness, swiftness to delivering tasks, good eyes for detail. There's no contention that he's a great addition to the team.",
     location: "Zuri Chat",
-    imageUrl: "../assets/avatar.png",
+    imageUrl: "../assets/avatar.avif",
   },
   {
     id: 2,
@@ -90,7 +90,7 @@ export const testimonies = [
     testimony:
       "He is a great developer but his modesty is out of this world. He is a funny team mate and always active. He can clone Facebook in just 2 weeks.",
     location: "Zuri Chat",
-    imageUrl: "../assets/avatar.png",
+    imageUrl: "../assets/avatar.avif",
   },
   {
     id: 3,
@@ -98,7 +98,7 @@ export const testimonies = [
     testimony:
       "Love his work. He completed the implementation of a design taking forever in no time. I was honestly shocked at the speed and precision with which he delivered. What I'm trying to say is, Johndiddles is an amazing developer and I'm honoured to have been able to work with him.",
     location: "Zuri Chat",
-    imageUrl: "../assets/avatar.png",
+    imageUrl: "../assets/avatar.avif",
   },
   {
     id: 4,
@@ -106,6 +106,6 @@ export const testimonies = [
     testimony:
       "A seasoned FE dev that always delivers 💪. Would love to work with him again 🙂.",
     location: "Zuri Chat",
-    imageUrl: "../assets/avatar.png",
+    imageUrl: "../assets/avatar.avif",
   },
 ];

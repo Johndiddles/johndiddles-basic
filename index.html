@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Welcome to Johndiddle's place. A full-stack engineer ">
+    <meta
+      name="description"
+      content="Welcome to Johndiddle's place. A full-stack engineer "
+    />
     <title>John Adepelumi</title>
     <!-- CSS only -->
     <link
@@ -24,33 +27,35 @@
       <!-- Header and Hero Section  -->
       <div class="header">
         <div class="brand">
-          <a href="./" class="brand-link">
+          <a aria-label="" href="./" class="brand-link">
             <h2>J<span>J</span></h2>
           </a>
         </div>
         <div class="headerRight" id="headerRight">
           <nav>
             <div class="navLink" onclick="toggleMenu2()">
-              <a href="#home">Home</a>
+              <a aria-label="" href="#home">Home</a>
             </div>
             <div class="navLink" onclick="toggleMenu2()">
-              <a href="#about">About</a>
+              <a aria-label="" href="#about">About</a>
             </div>
             <div class="navLink" onclick="toggleMenu2()">
-              <a href="#portfolio">Portfolio</a>
+              <a aria-label="" href="#portfolio">Portfolio</a>
             </div>
             <div class="navLink" onclick="toggleMenu2()">
-              <a href="#testimonies">Testimonies</a>
+              <a aria-label="" href="#testimonies">Testimonies</a>
             </div>
           </nav>
 
           <div class="contact" onclick="toggleMenu2()">
-            <a href="./contact.html" class="contactBtn"> Say Hello </a>
+            <a aria-label="" href="./contact.html" class="contactBtn">
+              Say Hello
+            </a>
           </div>
         </div>
         <div class="navMenu" id="navMenu">
           <img
-            src="./assets/menu.png"
+            src="./assets/menu.avif"
             alt="menu icon"
             class="menuIcon"
             onclick="toggleMenu()"
@@ -79,15 +84,15 @@
       <section class="aboutSection" id="about">
         <div class="avatarSection">
           <div class="avatarWrapper">
-            <img src="./assets/avatar.png" alt="avatar" />
+            <img src="./assets/avatar.avif" alt="avatar" />
           </div>
         </div>
 
         <div class="aboutSectionText">
-          <h3>
+          <h2>
             Hi, <span>I'm John.</span> <br />
             Nice to meet you!
-          </h3>
+          </h2>
           <p class="aboutText">
             Hi there! I'm a Full Stack Engineer bubbling with code and coffee,
             with 2+ years of experience under my belt. Building user-friendly
@@ -124,30 +129,45 @@
         <div class="footer_author">Designed and built by Johndiddles</div>
         <div class="footer_links">
           <a
+            aria-label="linkedin profile"
             href="https://www.linkedin.com/in/john-adepelumi-52b22b128/"
             class="footer_links_item"
           >
             <i class="bi bi-linkedin"></i>
           </a>
-          <a href="https://github.com/johndiddles" class="footer_links_item">
+          <a
+            aria-label="github profile"
+            href="https://github.com/johndiddles"
+            class="footer_links_item"
+          >
             <i class="bi bi-github"></i>
           </a>
-          <a href="https://twitter.com/DiddlesCode" class="footer_links_item">
+          <a
+            aria-label="twitter profile"
+            href="https://twitter.com/DiddlesCode"
+            class="footer_links_item"
+          >
             <i class="bi bi-twitter"></i>
           </a>
           <a
-            href="https://wa.me/2348181933012?text=Hi%John,%20would%20you%20be%20interested%20in%20a%20frontend%20role/gig?"
+            aria-label="whatsapp account"
+            href="https://wa.me/2348181933012?text=Hi%John,%20would%20you%20be%20interested%20in%20a%20frontend/full-stack%20role/gig?"
             class="footer_links_item"
           >
             <i class="bi bi-whatsapp"></i>
           </a>
-          <a
+          <!-- <a
+          aria-label="facebook profile"
             href="https://www.facebook.com/JohnAdepelumi/"
             class="footer_links_item"
           >
             <i class="bi bi-facebook"></i>
-          </a>
-          <a href="mailto:johnadepelumi@yahoo.com" class="footer_links_item">
+          </a> -->
+          <a
+            aria-label="send an email"
+            href="mailto:johnadepelumi@yahoo.com"
+            class="footer_links_item"
+          >
             <i class="bi bi-envelope"></i>
           </a>
         </div>

@@ -129,7 +129,7 @@ a {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
-  background-image: url(../assets/bg5.png);
+  background-image: url(../assets/bg5.avif);
   background-size: cover;
   position: relative;
 
@@ -207,7 +207,6 @@ a {
   font-family: "Aclonica", sans-serif;
   cursor: none;
   transition: 1s;
-
 }
 
 .mainHeroSection .intro .tag {
@@ -328,12 +327,12 @@ a {
   /* color: white; */
 }
 
-.aboutSectionText h3 {
+.aboutSectionText h2 {
   font-size: 2em;
   margin: 1em auto;
 }
 
-.aboutSectionText h3 span {
+.aboutSectionText h2 span {
   color: var(--brown);
 }
 
@@ -659,7 +658,7 @@ a {
 .contact-page {
   width: 100vw;
   min-height: 100vh;
-  background: url(/assets/bg5.png);
+  background: url(/assets/bg5.avif);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -955,7 +954,7 @@ a {
   .aboutSectionText {
     padding: 4em 1.5em;
   }
-  .aboutSectionText h3 {
+  .aboutSectionText h2 {
     font-size: 1.5em;
   }
   .aboutSectionText .aboutText {
@@ -1099,33 +1098,4 @@ a {
     font-size: 0.8em;
     padding: 2em 2em;
   }
-
-  /* .testimonies {
-        padding: 3em 1.5em;
-        padding-bottom: 28em;
-        text-align: center;
-        width: 100%;
-
-    }
-    .testimony-wrapper {
-        width: 100%;
-    }
-    .testimonies .testimonies-card {
-        min-width: 100%;
-    }
-    .testimony-card-content {
-        padding: 1em
-    }
-
-    .testimony-card-front,
-    .testimony-card-back {
-        min-height: 400px
-    }
-    .testimony {
-        font-weight: 400;
-        font-size: 0.8em;
-    }
-    .author-details {
-      flex-direction: column;
-    } */
 }
