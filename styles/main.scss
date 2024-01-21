@@ -52,13 +52,10 @@ a {
   width: 5px;
   height: 5px;
   background: var(--light-brown);
-  // margin-left: -4px;
-  // margin-top: -4px;
   border-radius: 50%;
   z-index: 1000000;
   transform: translate3d(-50%, -50%, 0);
   pointer-events: none;
-  // animation: animateCursorOuter 0.5s infinite;
 }
 
 .cursor-outer {
@@ -67,8 +64,6 @@ a {
   left: 0;
   width: 30px;
   height: 30px;
-  // background: rgba(0, 0, 0, 0.1);
-  // backdrop-filter: blur(0.075em);
   box-shadow: 0 0 4px var(--light-brown);
   margin-left: -15px;
   margin-top: -15px;
@@ -138,15 +133,15 @@ a {
   background-size: cover;
   position: relative;
 
-  #videoBg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-  }
+  // #videoBg {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   object-fit: cover;
+  //   z-index: 0;
+  // }
 }
 
 .heroContent {
@@ -213,9 +208,6 @@ a {
   cursor: none;
   transition: 1s;
 
-  &:hover {
-    transform: scale(1.1);
-  }
 }
 
 .mainHeroSection .intro .tag {
@@ -228,16 +220,16 @@ a {
   color: white;
   transition: 0.1s;
 }
-.mainHeroSection .intro:hover .introFont {
-  margin: 0;
-  color: #00e6e4;
-  transition: 0.1s;
-}
-.mainHeroSection .intro:hover .two {
-  margin: 0;
-  color: #fb4f93;
-  transition: 0.1s;
-}
+// .mainHeroSection .intro:hover .introFont {
+//   margin: 0;
+//   color: #00e6e4;
+//   transition: 0.1s;
+// }
+// .mainHeroSection .intro:hover .two {
+//   margin: 0;
+//   color: #fb4f93;
+//   transition: 0.1s;
+// }
 .mainHeroSection .intro:hover .tag {
   color: #fb4f93;
   transition: 0.5s;

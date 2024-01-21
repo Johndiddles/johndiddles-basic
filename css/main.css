@@ -163,16 +163,6 @@ a {
   background-size: cover;
   position: relative;
 }
-.hero #videoBg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: 0;
-}
 
 .heroContent {
   width: 100%;
@@ -265,10 +255,6 @@ a {
   -webkit-transition: 1s;
   transition: 1s;
 }
-.mainHeroSection .intro:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
 
 .mainHeroSection .intro .tag {
   color: var(--brown);
@@ -279,20 +265,6 @@ a {
 .mainHeroSection .intro .introFont {
   margin: 0;
   color: white;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-}
-
-.mainHeroSection .intro:hover .introFont {
-  margin: 0;
-  color: #00e6e4;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-}
-
-.mainHeroSection .intro:hover .two {
-  margin: 0;
-  color: #fb4f93;
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }

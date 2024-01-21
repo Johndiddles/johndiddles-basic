@@ -7,7 +7,7 @@ for (let i = 0; i < projects.length; i++) {
     ? (document.getElementById("portfolio").innerHTML += `
     <div class="portfolio">
     <div class="portfolio-img">
-      <img loading="lazy" src=${portfolio.imageUrl} alt="bloodhq">
+      <img loading="lazy" src=${portfolio.imageUrl} alt=${portfolio.name}>
     </div>
 
     <div class="portfolio-details">
@@ -57,7 +57,7 @@ function changeTestimony() {
 
         <div class="testimony-card-back">
         <div class="author-details">
-          <img lodaing="lazy" src=${testimonies[presentTestimony].imageUrl} />
+          <img lodaing="lazy" src=${testimonies[presentTestimony].imageUrl} alt=${testimonies[presentTestimony].name} />
           <p class="author">${testimonies[presentTestimony].name}
           <br>
           <span class="location">${testimonies[presentTestimony].location}</span></p>
