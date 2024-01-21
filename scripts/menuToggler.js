@@ -16,6 +16,6 @@ const toggleMenu2 = () => {
 
     document.getElementById(
       "navMenu"
-    ).innerHTML = `<img src="./assets/menu.png" alt="menu icon" class="menuIcon" onclick="toggleMenu()">`;
+    ).innerHTML = `<img src="./assets/menu.avif" alt="menu icon" class="menuIcon" onclick="toggleMenu()">`;
   }
 };
