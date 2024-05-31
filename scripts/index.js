@@ -74,11 +74,12 @@ function changeTestimony() {
   } else {
     presentTestimony = 0;
   }
-
-  setTimeout("changeTestimony()", time);
 }
 
-window.onload = changeTestimony;
+window.onload = () => {
+  changeTestimony();
+  setInterval(() => changeTestimony(), time);
+};
 
 window.onscroll = function () {
   const headerHeight = document.querySelector(".header").offsetHeight;

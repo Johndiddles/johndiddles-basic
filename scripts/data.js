@@ -8,6 +8,14 @@ export const projects = [
       "An e-library that allows you download soft copies of all modules freely available to all dli students of the University of Lagos. This project seeks to ease access to study materials for student. Built with React Js, Redux, Node Js, Express Js, Mongo DB",
   },
   {
+    name: "Reshiito",
+    imageUrl: "../assets/reshiito.avif",
+    previewUrl: "https://reshiito.com/",
+    codeBaseUrl: null,
+    description:
+      "Reshiito takes the hassle out of expense management for individuals and businesses alike.  Simply snap a photo of your receipt with your phone and Reshiito automatically organizes it. Submitting expense claims becomes effortless, and businesses can ensure control with role-based access. Gain real-time insights into your spending habits and make smarter financial decisions. The reshiito website is built with Next.js",
+  },
+  {
     name: "RagauNG",
     imageUrl: "../assets/ragaung.avif",
     previewUrl: "https://ragaung.com/",
