@@ -4,10 +4,6 @@ const email = document.getElementById("email");
 const message = document.getElementById("message");
 
 const clearInputs = () => {
-  console.log(userName.value);
-  console.log(email.value);
-  console.log(message.value);
-
   userName.value = "";
   email.value = "";
   message.value = "";
@@ -31,7 +27,6 @@ function formHandler(e) {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log({ data });
         if (data.status === "success") {
           Toastify({
             text: `Your message was delivered successfully`,
